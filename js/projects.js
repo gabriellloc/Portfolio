@@ -23,7 +23,7 @@ allProjects.forEach(entries => {
   projectA.addEventListener("mouseenter", (event) => {
     const desc = entries.querySelector(".hiddenDesc")
     console.log(desc)
-    desc.style.height = "100%"
+    desc.style.height = desc.scrollHeight + "px"
     desc.style.opacity = "1"
 
     projectA.textContent = "Conhecer o Projeto"
