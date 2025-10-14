@@ -1,0 +1,124 @@
+.projects {
+  /* height: 100vh; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-block: 5rem;
+  padding: 1rem;
+}
+
+.myProjectsTitle {
+  color: var(--cl-lilac-mist);
+  font: 800 2rem var(--ff-plus-jakarta);
+  opacity: 0;
+}
+
+.projects .contentProjects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: calc(250px * 5 + 1rem * 3);
+  gap: 1rem;
+}
+
+.projects .contentProjects .project {
+  background: var(--cl-deep-amethyst);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  scale: 0;
+  transition: all ease-in-out 200ms;
+  position: relative;
+  height: 31rem;
+}
+
+.project:hover {
+  transform: scale(1.05) translateY(6px);
+  box-shadow: 0 3px 23px var(--cl-electric-lavender);
+  z-index: 99;
+}
+
+.project h3 {
+  color: var(--cl-vivid-orchid);
+}
+
+.project a {
+  color: var(--cl-electric-lavender);
+  text-decoration: underline;
+  font: 500 1rem var(--ff-plus-jakarta);
+  position: relative;
+  z-index: 99;
+  display: inline-block;
+  padding: .3rem 1rem;
+  cursor: default;
+
+  border-radius: 1rem;
+}
+
+.project > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  margin-block: .5rem;
+}
+
+
+.iconsProjectBg {
+  position: relative;
+  display: flex;
+  background: var(--cl-nightshade);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+
+  scale: .8;
+  transition: all ease 500ms;
+}
+
+.iconsProjectBg:hover {
+  transform: scale(1.03);
+  /* box-shadow: 0 0 20px var(--cl-nightshade); */
+}
+
+.iconsProjectBg img{
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 2rem;
+
+  transition: all 500ms ease-in-out;
+}
+
+.hiddenDesc {
+  height: 0;
+  opacity: 0;
+  transition: height .8s ease-out, opacity 600ms ease;
+  cursor: default;
+  color: var(--cl-soft-white);
+  padding-inline: .3rem;
+  text-align: center;
+}
+
+.project .meetProject {
+  background: var(--cl-vivid-orchid);
+  text-decoration: none;
+  border-radius: 1rem;
+  color: var(--cl-soft-white);
+  transition: all ease 500ms;
+}
+
+.project .meetProject:hover {
+  background: var(--cl-electric-lavender);
+  box-shadow: 0 0 1rem var(--cl-electric-lavender);
+  scale: 1.03;
+}

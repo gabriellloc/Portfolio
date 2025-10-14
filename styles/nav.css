@@ -1,0 +1,121 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cl-nightshade);
+
+  z-index: 9999;
+
+  border-bottom-right-radius: 1.5rem;
+  animation: navAnimation 2s ease-out both;
+}
+
+@keyframes navAnimation {
+  from {
+    border-bottom: 0px solid transparent;
+  } to {
+    border-bottom: 2px solid var(--cl-electric-lavender);
+  }
+}
+
+.nav .portfolioDev {
+  font: italic 600 1.5rem/1 var(--ff-plus-jakarta);
+  color: var(--cl-vivid-orchid);
+  margin-left: 2rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-out both;
+}
+
+.nav .menu {
+  display: flex;
+  gap: 4rem;
+  margin-right: 2rem;
+  animation: fadeIn 2s ease-out both;
+}
+
+@media (width<80em) {
+  .nav .portfolioDev {
+    font: italic 400 1.4rem/1 var(--ff-plus-jakarta);
+    margin-left: 1rem;
+  }
+
+  .nav .menu {
+    gap: .5rem;
+  }
+}
+
+@media (width < 20em) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav .menu {
+    margin: auto;
+  }
+}
+
+.nav .menu li {
+  color: var(--cl-pure-white);
+  padding: .5rem;
+  transition: all ease-out 500ms;
+}
+
+.nav .menu li a {
+  color: inherit;
+  font: 500 1rem var(--ff-plus-jakarta);
+  padding: .1rem;
+
+  position: relative;
+}
+
+.nav .menu li:hover, .active {
+  transform: scale(1.05) !important;
+  color: var(--cl-vivid-orchid) !important;
+  letter-spacing: 1px !important;
+}
+
+.nav .menu li a:hover::before, .active::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -3px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  left: 50%;
+  animation: borderBottomLeft 350ms ease-out both;
+}
+
+@keyframes borderBottomLeft {
+  from {
+    background-color: var(--cl-vivid-orchid);
+    width: 0;
+  }to {
+    background-color: var(--cl-vivid-orchid);
+    width: 50%;
+  }
+}
+
+.nav .menu li a:hover::after, .active::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -3px;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  left: 50%;
+  animation: borderBottomRight 350ms ease-out both;
+}
+
+@keyframes borderBottomRight {
+  from {
+    background-color: var(--cl-vivid-orchid);
+    width: 0;
+  }to {
+    background-color: var(--cl-vivid-orchid);
+    width: 50%;
+    left: 0;
+  }
+}

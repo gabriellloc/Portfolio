@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+  color: #000;
+
+  color: inherit;
+  font-family: var(--ff-plus-jakarta);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --ff-caviar-dreams: "Caviar Dreams", sans-serif;
+  --ff-plus-jakarta:"Plus Jakarta Sans", sans-serif;
+
+
+  --cl-nightshade: #11071F;
+  --cl-midnight-violet: #1E0246;
+  --cl-deep-amethyst: #261045;
+  --cl-vivid-orchid:#A362FF;
+  --cl-electric-lavender: #7937D5;
+  --cl-soft-graphite: #98959D;
+
+  --cl-lilac-mist: #EDEAF7;
+  --cl-pure-white: #fff;
+  --cl-soft-white: #ffffffb3;
+}
+
+body {
+  background: var(--cl-nightshade);
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.filterSaturate{
+  filter: saturate(5);
+}
+
+.ToLeft {
+  animation: ToLeft 1s ease-in-out both;
+}
+
+.ToRight {
+  animation: ToRight 1s .5s ease-in-out both;
+}
+
+.UpMedium {
+  animation: UpMedium 1s ease-in-out both;
+}
+
+.Up {
+  animation: Up 1s  ease-in-out both;
+}
+
+.cl-Vivid-Orchid{
+  color: var(--cl-vivid-orchid);
+}
+
+.cl-Electric-Lavender{
+  color: var(--cl-electric-lavender);
+}
+
+.ff-caviar-dreams {
+  font-family: var(--ff-caviar-dreams);
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.blur {
+  filter: blur(1.1);
+}
