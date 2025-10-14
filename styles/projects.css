@@ -1,5 +1,5 @@
 .projects {
-  /* height: 100vh; */
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   background: var(--cl-deep-amethyst);
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: .875rem;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 1rem 2rem 1rem;
@@ -36,7 +36,7 @@
   scale: 0;
   transition: all ease-in-out 200ms;
   position: relative;
-  height: 31rem;
+  max-height: fit-content;
 }
 
 .project:hover {
@@ -121,4 +121,11 @@
   background: var(--cl-electric-lavender);
   box-shadow: 0 0 1rem var(--cl-electric-lavender);
   scale: 1.03;
+}
+
+.project .meetProject:active {
+  scale: .99;
+  background: var(--cl-soft-white);
+  box-shadow: 0 0 1rem var(--cl-soft-white);
+  color: var(--cl-deep-amethyst);
 }

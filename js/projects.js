@@ -17,6 +17,9 @@ allProjects.forEach(entries => {
   })
 
   const projectA = entries.querySelector("a")
+  projectA.addEventListener("click", (event) => {
+    event.preventDefault()
+  })
   projectA.addEventListener("mouseenter", (event) => {
     const desc = entries.querySelector(".hiddenDesc")
     console.log(desc)
@@ -26,6 +29,9 @@ allProjects.forEach(entries => {
     projectA.textContent = "Conhecer o Projeto"
     projectA.classList.add("meetProject")
 
+    projectA.addEventListener("click", () => {
+      window.location.href = projectA.href
+    })
   })
 
   entries.addEventListener("mouseleave", () => {
@@ -34,7 +40,10 @@ allProjects.forEach(entries => {
     desc.style.opacity = "0"
     desc.style.height = "0"
 
-    projectA.textContent = "PASSE O MOUSE AQUI"
+    projectA.textContent = "Mais informações"
     projectA.classList.remove("meetProject")
+    projectA.addEventListener("click", (event) => {
+      event.preventDefault()
+    })
   })
 })

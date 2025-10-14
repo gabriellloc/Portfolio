@@ -30,7 +30,7 @@
   justify-content: center;
   gap: .875rem;
   flex-wrap: wrap;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 .technologies .technologies-contents .iconTec{
@@ -46,8 +46,15 @@
   border-radius: 1rem;
 
   opacity: 0;
-  box-shadow: 0 0 1rem #a362ff46;
+  box-shadow: 0 0 .5rem var(--cl-nightshade);
 
+}
+
+@media (width<80em) {
+  .technologies .technologies-contents .iconTec {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .iconTec:hover {

@@ -38,6 +38,13 @@ img {
   width: 100%;
 }
 
+button {
+  background: transparent;
+  outline: none;
+  appearance: none;
+  border: none;
+}
+
 .filterSaturate{
   filter: saturate(5);
 }
