@@ -10,9 +10,9 @@
 
 .content-footer {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   padding-inline: .875rem;
 }
 
@@ -27,9 +27,6 @@
 }
 
 @media (width < 80em) {
-  .content-footer {
-    gap: 1rem;
-  }
 
   .content-footer .H2Contact {
     font: 700 2rem/1.5 var(--ff-plus-jakarta);
@@ -42,7 +39,6 @@
 .content-footer > div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
   align-items: center;
   gap: 2rem;
 }
