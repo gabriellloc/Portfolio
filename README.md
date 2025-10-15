@@ -2,6 +2,10 @@
 
 ![Static Badge](https://img.shields.io/badge/Portf%C3%B3lio-Gabriel_Oliveira_Cardoso-7937D5?style=plastic)
 
+<p align="center">
+  <img src="./assets/images/gabriel-ia.png" width="300" style="border: 2px solid #ccc; border-radius: 50%">
+</p>
+
 ## 📓 Descrição
 
 Portfólio desenvolvido para apresentar meus projetos e habilidades como desenvolvedor. O objetivo foi criar um espaço moderno, responsivo e intuitivo, que refletisse minha identidade profissional e minha forma de trabalhar. Além de reunir alguns dos meus trabalhos, o projeto destaca meu cuidado com o design, a performance e a experiência do usuário em diferentes dispositivos.
