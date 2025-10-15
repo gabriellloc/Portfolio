@@ -3,7 +3,7 @@
 ![Static Badge](https://img.shields.io/badge/Portf%C3%B3lio-Gabriel_Oliveira_Cardoso-7937D5?style=plastic)
 
 <p align="center">
-  <img src="./assets/images/gabriel-ia.png" width="300" style="border: 2px solid #ccc; border-radius: 50%">
+  <img src="./assets/image.png">
 </p>
 
 ## 📓 Descrição
