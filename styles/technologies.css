@@ -4,7 +4,7 @@
   z-index: 10;
 
   min-height: fit-content;
-  height: 90vh;
+  height: calc(100vh + 2rem);
   background: var(--cl-deep-amethyst);
 
   box-shadow: 0 -4px 38px var(--cl-deep-amethyst), 0 3px 38px var(--cl-deep-amethyst);
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 6rem;
+  padding: 0 3rem 1rem;
 }
 
 .technologies h2 {
@@ -23,6 +23,7 @@
   z-index: -1;
   color: var(--cl-lilac-mist);
   opacity: 0;
+  text-align: center;
 }
 
 .technologies .technologies-contents {
@@ -47,13 +48,12 @@
 
   opacity: 0;
   box-shadow: 0 0 .5rem var(--cl-nightshade);
-
 }
 
 @media (width<80em) {
   .technologies .technologies-contents .iconTec {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
 
@@ -75,7 +75,7 @@
   left: 0;
   top: 20%;
   width: 10rem;
-  z-index: -1;
+  z-index: -6;
 }
 
 .aboutTec {
@@ -96,8 +96,9 @@
 
 @media (width<80em) {
   .aboutTec {
-    left: -60%;
+    left: -135%;
     top: 100%;
+    scale: .75;
   }
 }
 
