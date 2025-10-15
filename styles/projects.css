@@ -1,5 +1,5 @@
 .projects {
-  height: 120vh;
+  height: fit-content;
 
 
   display: flex;
@@ -29,10 +29,19 @@
 
 .projects .contentProjects > div {
   position: relative;
+  width: 100%;
+}
+
+@media (width < 60em) {
+  .projects .contentProjects > div {
+    width: 85%;
+    margin: auto;
+    scale: .8;
+  }
 }
 
 @media (width<80em) {
-  .projects .contentProjects > div:nth-child(1), .projects .contentProjects > div:nth-child(2), .projects .contentProjects > div:nth-child(3) {
+  .projects .contentProjects > div:nth-child(1), .projects .contentProjects > div:nth-child(2), .projects .contentProjects > div:nth-child(3), .projects .contentProjects > div:nth-child(4){
     display: none;
   }
 }

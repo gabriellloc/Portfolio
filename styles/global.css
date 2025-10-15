@@ -27,6 +27,8 @@
   --cl-lilac-mist: #EDEAF7;
   --cl-pure-white: #fff;
   --cl-soft-white: #ffffffb3;
+
+  --shadow-black: rgba(0, 0, 0, .4);
 }
 
 body {

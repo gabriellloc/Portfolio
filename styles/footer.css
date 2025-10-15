@@ -1,0 +1,75 @@
+.footer {
+  height: 70vh;
+  background-color: var(--shadow-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  color: aliceblue;
+}
+
+.content-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-footer .H2Contact {
+  font: 700 2.5rem/1.5 var(--ff-plus-jakarta);
+  color: var(--cl-pure-white);
+}
+
+.content-footer .PContact {
+  font: 600 1rem/1.6 var(--ff-caviar-dreams);
+  color: var(--cl-soft-white);
+}
+
+.content-footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-footer > div .iconsContacts {
+  display: flex;
+  gap: 3rem;
+}
+
+.content-footer > div .iconsContacts a {
+  display: flex;
+  transition: all ease-out 500ms;
+  border-radius: 100%;
+  background-color: var(--cl-deep-amethyst);
+  padding: .5rem;
+}
+
+.content-footer > div .iconsContacts a:hover {
+  transform: scale(1.3) translateY(-4px);
+  box-shadow: 0 0 .2rem var(--cl-electric-lavender), inset 0 0 1rem var(--cl-deep-amethyst);
+}
+
+.content-footer > div button {
+  margin-left: auto;
+  padding: .5rem;
+  border-radius: .5rem;
+  background: var(--cl-electric-lavender);
+  color: var(--cl-deep-amethyst);
+  font: 700 .875rem/1.5 var(--ff-plus-jakarta);
+  box-shadow: 0 0 .5rem var(--cl-electric-lavender);
+  transition: all ease-in-out 250ms;
+  cursor: pointer;
+}
+
+.content-footer > div button:hover {
+  scale: 1.05;
+  box-shadow: 0 0 1rem var(--cl-electric-lavender);
+}
+
+.content-footer > div button:active {
+  scale: 1;
+  box-shadow: 0 0 1rem var(--cl-vivid-orchid);
+  background: var(--cl-vivid-orchid);
+}
