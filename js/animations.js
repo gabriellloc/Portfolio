@@ -68,3 +68,29 @@ const UpMedium = new IntersectionObserver((entries) => {
 })
 UpMedium.observe(myTec)
 UpMedium.observe(myProjectsTitle)
+
+
+
+const menuItem = document.querySelectorAll(".menuItem")
+const footer = document.querySelector("#footer")
+const inicio = document.querySelector("#inicio")
+
+
+menuItem.forEach(MItem => {
+  const MenuObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        MItem.classList.add("active")
+      } else {
+        MItem.classList.remove("active")
+      }
+    })
+  })
+
+  if(MItem.textContent === "Contato"){
+    MenuObserver.observe(footer)
+  } else if(MItem.textContent === "Início"){
+    MenuObserver.observe(inicio)
+  }
+
+})
