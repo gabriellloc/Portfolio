@@ -13,6 +13,7 @@
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
+  padding-inline: .875rem;
 }
 
 .content-footer .H2Contact {
@@ -23,6 +24,19 @@
 .content-footer .PContact {
   font: 600 1rem/1.6 var(--ff-caviar-dreams);
   color: var(--cl-soft-white);
+}
+
+@media (width < 80em) {
+  .content-footer {
+    gap: 1rem;
+  }
+
+  .content-footer .H2Contact {
+    font: 700 2rem/1.5 var(--ff-plus-jakarta);
+  }
+  .content-footer .PContact {
+    font: 600 .875rem/1.6 var(--ff-caviar-dreams);
+  }
 }
 
 .content-footer > div {
