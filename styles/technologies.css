@@ -34,6 +34,12 @@
   max-width: 60rem;
 }
 
+@media (width < 80em) {
+  .technologies .technologies-contents {
+    max-width: 70%;
+  }
+}
+
 .technologies .technologies-contents .iconTec{
   position: relative;
   display: flex;
@@ -85,18 +91,18 @@
   position: absolute;
   z-index: 99;
   background-color: var(--cl-vivid-orchid);
-  left: 100%;
+  left: calc(100% + 1rem);
   border-radius: 1rem;
   padding: .5rem;
   box-shadow: 0 0 .5rem var(--cl-vivid-orchid);
   overflow: hidden;
-  margin-left: 1rem;
   animation: newItem 600ms 250ms ease-in-out both;
 }
 
 @media (width<80em) {
   .aboutTec {
-    left: -135%;
+    transform: translateX(-50%);
+    left: 0;
     top: 100%;
     scale: .75;
   }
