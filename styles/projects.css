@@ -40,7 +40,7 @@
   }
 }
 
-@media (width<80em) {
+@media (width < 70em) {
   .projects .contentProjects > div:nth-child(1), .projects .contentProjects > div:nth-child(2), .projects .contentProjects > div:nth-child(3), .projects .contentProjects > div:nth-child(4){
     display: none;
   }
