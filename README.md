@@ -23,6 +23,7 @@ Portfólio desenvolvido para apresentar meus projetos e habilidades como desenvo
   ├── favicon/    # Pasta com o favicon
   ├── fonts/      # Pasta com as fontes
   ├── js/         # Pasta com os arquivos JavaScript
+  ├── pages       # Pasta com todas as páginas do projeto
   ├── styles/     # Pasta com todos os estilos
   ├── index.css   # Arquivo que importa todos os estilos
   ├── index.html  # Arquivo principal
