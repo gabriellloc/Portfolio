@@ -6,6 +6,12 @@
   padding: 5rem 4rem;
 }
 
+@media (width<60em) {
+  .aboutMeMain {
+    padding: 5rem 0;
+  }
+}
+
 .aboutMeMain header {
   display: flex;
   padding: 2rem 4rem;
@@ -13,6 +19,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+@media (width<60em) {
+  .aboutMeMain header {
+    padding: 2rem;
+  }
 }
 
 .aboutMeMain header .imgAboutMe{
@@ -28,7 +40,7 @@
 
 @media (width < 80em) {
   .aboutMeMain header .imgAboutMe img {
-    width: 20rem;
+    width: 18rem;
   }
 }
 
@@ -47,6 +59,12 @@
   gap: 1.5rem;
   color: var(--cl-soft-white);
   padding: 2rem 4rem;
+}
+
+@media (width<60em) {
+  .aboutMeMain > div {
+    padding: 1rem 2rem;
+  }
 }
 
 .aboutMeMain > div p {
