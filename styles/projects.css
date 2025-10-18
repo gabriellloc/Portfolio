@@ -61,7 +61,7 @@
     
   position: absolute;
 
-  /* display: none; */
+  overflow: hidden;
 }
 
 .project:hover {
