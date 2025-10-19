@@ -1,4 +1,3 @@
-
 function labelActiveF(){
   const inputsDiv = document.querySelectorAll(".inputs div")
   inputsDiv.forEach(inputDiv => {

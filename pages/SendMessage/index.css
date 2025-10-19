@@ -6,7 +6,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  padding: 6rem 4rem;
+}
+
+@media (width < 50em) {
+  .containerMessage {
+    padding: 5rem 1rem;
+  }
 }
 
 .contentMessage form{
@@ -170,4 +178,35 @@
 .messageSendModal div button:last-child:hover {
   scale: 1.01;
   box-shadow: 0 0 .4rem var(--cl-electric-lavender);
+}
+
+.imgS {
+  position: absolute;
+  max-width: 15rem;
+}
+
+.imgS#logo-vscode {
+  transform: translate(-50%, -50%);
+  width: 6rem;
+  top: 20%;
+  left: 10%;
+  z-index: -1;
+}
+
+.imgS#logo-react {
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  bottom: 10%;
+  right: 7%;
+}
+
+@media (width < 80em) {
+  .imgS#logo-vscode {
+    display: none;
+  }
+
+  .imgS#logo-react {
+    display: none;
+  }
 }
