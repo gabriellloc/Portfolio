@@ -1,0 +1,173 @@
+@import url(../../styles/nav.css);
+@import url(../../styles/global.css);
+@import url(../../styles/animations.css);
+
+.containerMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contentMessage form{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.contentMessage .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contentMessage .texts h1 {
+  color: var(--cl-lilac-mist);
+  text-align: center;
+  font: 700 2.25rem var(--ff-plus-jakarta);
+}
+
+.contentMessage .texts p {
+  color: var(--cl-soft-white);
+  text-align: center;
+  font: 400 1.25rem var(--ff-plus-jakarta);
+}
+
+.contentMessage .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: white;
+}
+
+
+.inputs div {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+
+.inputs div:nth-child(3) {
+  flex: 1 0 100%;
+}
+
+.inputs div > button {
+  margin-left: auto;
+  padding: .875rem;
+  background: var(--cl-royal-grape);
+  border-radius: .5rem;
+  color: var(--cl-soft-white);
+  font: 500 .875rem var(--ff-plus-jakarta);
+  cursor: pointer;
+  box-shadow: 0 0 .5rem var(--shadow-black);
+  transition: all 250ms ease-out;
+}
+
+.inputs div > button:focus,  .inputs div > button:hover {
+  color: var(--cl-lilac-mist);
+  font: 600 .875rem var(--ff-plus-jakarta);
+  box-shadow: 0 0 1rem var(--cl-royal-grape);
+  scale: 1.02;
+}
+
+.inputs div label{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 1rem;
+  cursor: text;
+  color: var(--cl-soft-white);
+  font: 600 1.1rem var(--ff-plus-jakarta);
+  transition: all 250ms ease-out;
+  pointer-events: none;
+}
+
+.inputs div input {
+  flex: 1;
+  padding: .5rem 1rem;
+  border-bottom: 3px solid var(--cl-royal-grape);
+  font: 500 1rem var(--ff-plus-jakarta);
+  color: var(--cl-lilac-mist);
+  transition: all 250ms ease-out;
+  outline: 1px solid transparent;
+}
+
+.inputs div input:hover {
+  border-radius: .5rem;
+  outline: 2px solid var(--cl-royal-grape);
+}
+
+.inputs div input:focus {
+  border-radius: .5rem;
+  outline: 2px solid var(--cl-royal-grape);
+}
+
+.inputs div label.labelActive{
+  transform: translateY(-10%);
+  top: -50%;
+  color: var(--cl-vivid-orchid);
+}
+
+.messageSendModal {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: var(--cl-deep-amethyst);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem var(--cl-deep-amethyst);
+}
+
+.messageSendModal h1 {
+  color: var(--cl-vivid-orchid);
+  font: 600 1.8rem var(--ff-plus-jakarta);
+  text-align: center;
+}
+
+.messageSendModal p {
+  font: 600 1rem var(--ff-plus-jakarta);
+  text-align: center;
+  color: var(--cl-electric-lavender);
+}
+
+.messageSendModal div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.messageSendModal div button:first-child {
+  border: 2px solid var(--cl-electric-lavender);
+  color: var(--cl-vivid-orchid);
+  font: 600 .8rem var(--ff-plus-jakarta);
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.messageSendModal div button:first-child:hover {
+  scale: 1.01;
+  box-shadow: 0 0 .4rem var(--cl-electric-lavender);
+}
+
+.messageSendModal div button:last-child {
+  background: var(--cl-electric-lavender);
+  color: var(--cl-soft-white);
+  font: 500 .8rem var(--ff-plus-jakarta);
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.messageSendModal div button:last-child:hover {
+  scale: 1.01;
+  box-shadow: 0 0 .4rem var(--cl-electric-lavender);
+}

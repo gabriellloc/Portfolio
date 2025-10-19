@@ -45,10 +45,15 @@
 
   --cl-nightshade: #11071F;
   --cl-midnight-violet: #1E0246;
+  --cl-royal-grape: #381F5B;
   --cl-deep-amethyst: #261045;
   --cl-vivid-orchid:#A362FF;
   --cl-electric-lavender: #7937D5;
   --cl-soft-graphite: #98959D;
+
+  --cl-neon-mint: #3DDC84;  
+  --cl-crimson-alert: #FF5E5E;
+
 
   --cl-lilac-mist: #EDEAF7;
   --cl-pure-white: #fff;
@@ -67,6 +72,13 @@ img {
 }
 
 button {
+  background: transparent;
+  outline: none;
+  appearance: none;
+  border: none;
+}
+
+input {
   background: transparent;
   outline: none;
   appearance: none;
