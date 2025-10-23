@@ -1,9 +1,15 @@
+let screenWidth = window.innerWidth
+console.log(screenWidth)
+window.addEventListener("resize", () => {
+	screenWidth = window.innerWidth
+	console.log(screenWidth)
+})
+
 const allProjects = document.querySelectorAll(".project")
 
 const contentProjectsDiv = document.querySelectorAll(".contentProjects > div")
 
 allProjects.forEach(entries => {
-
   entries.addEventListener("mouseenter", () => {
     const iconsLight = entries.querySelectorAll(".iconsProjectBg img")
     iconsLight.forEach(icon => {
@@ -31,6 +37,20 @@ allProjects.forEach(entries => {
     
     projectA.removeAttribute("disabled")
   })
+
+	if(screenWidth < 900){
+		entries.addEventListener("click", (event) => {
+			const desc = entries.querySelector(".hiddenDesc")
+			desc.style.height = desc.scrollHeight + "px"
+			desc.style.opacity = "1"
+	
+			projectA.textContent = "Conhecer o Projeto"
+			projectA.classList.add("meetProject")
+	
+			
+			projectA.removeAttribute("disabled")
+		})
+	}
 
   entries.addEventListener("mouseleave", () => {
     const desc = entries.querySelector(".hiddenDesc")
