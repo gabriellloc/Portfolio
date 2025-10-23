@@ -179,6 +179,24 @@
   box-shadow: 0 0 .4rem var(--cl-electric-lavender);
 }
 
+
+@media (width<50em) {
+	.messageSendModal {
+		width: 80%;
+	}
+	.messageSendModal h1 {
+		font: 600 1.5rem var(--ff-plus-jakarta);
+	}
+
+	.messageSendModal p {
+		font: 600 .95rem var(--ff-plus-jakarta);
+	}
+
+	.messageSendModal div button {
+		font: 500 .9rem var(--ff-plus-jakarta) !important;
+	}
+}
+
 .imgS {
   position: absolute;
   max-width: 15rem;
