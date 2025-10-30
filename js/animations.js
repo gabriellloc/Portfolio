@@ -48,11 +48,6 @@ iconsTec.forEach(iconTec => {
   Up.observe(iconTec)
 })
 
-const project = document.querySelectorAll(".project")
-project.forEach(content => {
-  Up.observe(content)
-})
-
 // UpMedium
 const myTec = document.querySelector(".technologies h2")
 const myProjectsTitle = document.querySelector(".myProjectsTitle")
@@ -66,9 +61,14 @@ const UpMedium = new IntersectionObserver((entries) => {
     }
   })
 })
+
 UpMedium.observe(myTec)
 UpMedium.observe(myProjectsTitle)
 
+const project = document.querySelectorAll(".project")
+project.forEach(content => {
+  UpMedium.observe(content)
+})
 
 
 const menuItem = document.querySelectorAll(".menuItem")
